@@ -1,8 +1,7 @@
 class ProjectsController < ApplicationController
-  def index
+  def show
     @projects = Project.where(nil)
-    @projects = @projects.description(params[:description]) if params[:description].present?
-    @projects = @projects.school_name(params[:school_name]) if params[:school_name].present?
+    @projects = @projects.search(params[:search]) if params[:search].present?
     render json: @projects
   end
 end
