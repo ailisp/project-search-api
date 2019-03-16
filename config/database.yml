@@ -13,10 +13,4 @@ test:
 
 production:
   <<: *default
-#  This, while it's said in https://www.sqlite.org/inmemorydb.html
-#  works, rails can't recognize this format and will create a file
-#  named production.sqlite3?mode=memory&cache=shared
-#  A work around I can think of is when deploy this rails app,
-#  mount the db file in a mem filesystem.
-#  database: file:db/production.sqlite3?mode=memory&cache=shared
   database: db/production.sqlite3
