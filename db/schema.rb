@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_15_233858) do
+ActiveRecord::Schema.define(version: 2019_03_16_021118) do
 
   create_table "projects", force: :cascade do |t|
     t.integer "Project Geographic District"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2019_03_15_233858) do
     t.date "Project Phase Actual Start Date"
     t.date "Project Phase Planned End Date"
     t.date "Project Phase Actual End Date"
-    t.string "Project Budget Amount"
+    t.integer "Project Budget Amount"
     t.integer "Final Estimate of Actual Costs Through End of Phase Amount"
     t.integer "Total Phase Actual Spending Amount"
     t.string "DSF Number"
