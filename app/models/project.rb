@@ -24,5 +24,5 @@ class Project < ApplicationRecord
   scope :filter_budget, filter_range("Project Budget Amount")
   scope :filter_final_estimate , filter_range("Final Estimate of Actual Costs Through End of Phase Amount")
   scope :filter_total_spending, filter_range("Total Phase Actual Spending Amount")
-
+  scope :pagination, -> (per_page, page) { limit(per_page.to_i).offset(per_page.to_i * (page.to_i - 1)) }
 end

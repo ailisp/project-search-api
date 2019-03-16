@@ -20,7 +20,13 @@ class ProjectsController < ApplicationController
     @projects = filter_range(@projects, "planned_end_date")
     @projects = filter_range(@projects, "final_estimate")
     @projects = filter_range(@projects, "total_spending")
-
+    count = @projects.count
+    if params[:per_page].present?
+      per_page = params[:per_page].to_i
+      page = if params[:page].present? then params[:page].to_i else 1 end
+      @projects = @projects.pagination(per_page, page)
+      return render json: {data: @projects, total_pages: -(-count/per_page), page: page}
+    end
     render json: @projects
   end
 end
