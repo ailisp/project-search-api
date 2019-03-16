@@ -18,6 +18,7 @@ class ProjectsController < ApplicationController
     @projects = filter_range(@projects, "actual_start_date")
     @projects = filter_range(@projects, "actual_end_date")
     @projects = filter_range(@projects, "planned_end_date")
+    @projects = filter_range(@projects, "budget")
     @projects = filter_range(@projects, "final_estimate")
     @projects = filter_range(@projects, "total_spending")
     count = @projects.count
