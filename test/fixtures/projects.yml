@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Project Geographic District: 
+  Project Building Identifier: MyString
+  Project School Name: MyString
+  Project Type: MyString
+  Project Description: MyString
+  Project Phase Name: MyString
+  Project Status Name: MyString
+  Project Phase Actual Start Date: 2019-03-15
+  Project Phase Planned End Date: 2019-03-15
+  Project Phase Actual End Date: 2019-03-15
+  Project Budget Amount: MyString
+  Final Estimate of Actual Costs Through End of Phase Amount: 
+  Total Phase Actual Spending Amount: 
+  DSF Number(s): MyString
+
+two:
+  Project Geographic District: 
+  Project Building Identifier: MyString
+  Project School Name: MyString
+  Project Type: MyString
+  Project Description: MyString
+  Project Phase Name: MyString
+  Project Status Name: MyString
+  Project Phase Actual Start Date: 2019-03-15
+  Project Phase Planned End Date: 2019-03-15
+  Project Phase Actual End Date: 2019-03-15
+  Project Budget Amount: MyString
+  Final Estimate of Actual Costs Through End of Phase Amount: 
+  Total Phase Actual Spending Amount: 
+  DSF Number(s): MyString
